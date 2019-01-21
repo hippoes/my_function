@@ -135,9 +135,9 @@ echo "</pre>";*/
 
 // echo my_sys_uptime();
 
-//echo "<pre>";
-//var_dump(get_area('101.132.113.116'));
-//echo "</pre>";
+echo "<pre>";
+var_dump(get_area('101.132.113.116'));
+echo "</pre>";
 
 //冒泡排序
 /*$arr=array(101,1,43,54,62,21,66,32,78,36,76,39);
@@ -166,6 +166,80 @@ echo '<pre>';
 var_dump(MergeSort($arr));
 echo '</pre>';*/
 
-$arr = array(101,2,4,5,2,4,6,3,1,2,7,8);
+/*$arr = array(101,2,4,5,2,4,6,3,1,2,7,8);
 MergeSort($arr);
-var_dump($arr);
+var_dump($arr);*/
+
+
+// alert('123');
+
+
+// echo rand(0000,9999);
+
+// echo randomInt(5);
+
+// echo str_pad(mt_rand(0,999999),'10','0',STR_PAD_BOTH);
+
+// var_dump(matchEmail('4@qq.com'));
+
+// var_dump(matchPhone('1761000163'));
+
+/*$file = './image/01/01.png';
+print_r(Base64EncodeImage($file));*/
+
+$str = '"&lt;&copy; W3CS&ccedil;h&deg;&deg;&brvbar;&sect;&gt;";';
+// var_dump(newAddslashes($str));
+
+// echo $str;
+
+// var_dump(newHtmlSpecialChars($str,'gbk'));
+
+// var_dump(newHtmlEentityDdecode(newHtmlSpecialChars($str),'gbk'));
+
+// var_dump(newHtmlentities($str));
+
+// $str = 'hello "world" select * from userinfo';
+
+// var_dump(trimUnsafeControlChars(chr(061).chr(64).chr(94).chr(61).chr(0x61)));
+
+
+/*$file = file_get_contents('./log/log.txt');
+var_dump($file);
+echo trimTextarea($file);*/
+
+
+/*
+$file = file_get_contents('./public/js/bocfe.js');
+
+echo "<pre>";
+var_dump($file);
+echo "</pre>";
+
+echo "<hr/>";
+
+echo "<pre>";
+var_dump(trimTextarea($file));
+echo "</pre>";
+
+echo "<hr/>";
+
+echo "<pre>";
+var_dump(formatJs($file));
+echo "</pre>";
+
+echo "<hr/>";
+
+echo "<pre>";
+var_dump(trimScript($file));
+echo "</pre>";*/
+
+
+// $str = '12345678902020';
+// echo cutStr($str,5);
+
+$str = '{"status":"0","message":{"Message":"OK","RequestId":"AA06346C-D32F-4D56-884D-6E27CE734D94","BizId":"229900548061850481^0","Code":"OK"}}';
+
+echo "<pre>";
+var_dump(json_encode_ex($str));
+var_dump(json_encode($str, JSON_UNESCAPED_UNICODE));
+echo "</pre>";
